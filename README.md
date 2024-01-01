@@ -1,43 +1,21 @@
-## Welcome to GitHub Pages
+# This is a Repository for all of the Course work included in MAGD 150
 
-You can use the [editor on GitHub](https://github.com/JMMyhre/MAGD-150-Assignments/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+### All of this work was completed by myself or with the help of my classmates
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+_All files were done using P5.js or by using libraries offered on their website https://p5js.org/_
 
-### Markdown
+## Labs
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Lab 1: [This file has a House](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab01_myhre.zip)
 
-```markdown
-Syntax highlighted code block
+Lab 3: [This file has bubbles that move with the cursor and bubbles that move passively on the screen](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab03_myhre.zip)
 
-# Header 1
-## Header 2
-### Header 3
+Lab 4: [This file has pizza that changes toppings when you click on it](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab04_myhre%20(2).zip)
 
-- Bulleted
-- List
+Lab 5: [This file has a television screen with a ball bouncing around in it](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab05_myhre.zip)
 
-1. Numbered
-2. List
+Lab 6: [This file has a pac that moves back and forth on the screen with some pips](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab06_myhre.zip)
 
-**Bold** and _Italic_ and `Code` text
+Lab 7: [This file has leaves that fall across the screen](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab07_myhre.zip)
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JMMyhre/MAGD-150-Assignments/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
-[This file has bubbles that move witht he cursor and that move on the screen](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab03_myhre.zip),
-[This file has pizza that changes toppings when you click on it](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab04_myhre%20(2).zip),
-[This file has a television screen with a ball bouncing around in it](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab05_myhre.zip),
-[This file has a pac that moves back and forth on the screen with some pips](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab06_myhre.zip),
-[This file has leaves that fall across the screen](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab07_myhre.zip),
