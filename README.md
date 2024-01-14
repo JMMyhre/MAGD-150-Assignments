@@ -4,7 +4,7 @@
 
 ### All of this work was completed by myself or with the help of my classmates
 
-### To access and display the file you will need the sublime and the sublime browsersync extension. Enter the folder and find the index.html, once opened use the browsersync to launch the content and Enjoy :)
+_To access and display the file you will need the sublime and the sublime browsersync extension. Enter the folder and find the index.html, once opened use the browsersync to launch the content and Enjoy :)_
 
 _All files were done using P5.js or by using libraries offered on their website https://p5js.org/_
 
