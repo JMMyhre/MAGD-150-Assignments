@@ -26,7 +26,10 @@ Lab 7: [This file has leaves that fall across the screen](https://github.com/JMM
 
 Lab 8: [This file shows text and images boucing from side to side](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab08_myhre.zip)
 
+Lab 10: [This file shows text and images boucing from side to side](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab10_myhre.zip)
+
 ## Final Project
 
-
-
+[Lux Brumalis Design Document](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150luxbrumalis_frank-maue-myhre.docx)
+[Lux Brumalis Game](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab08_myhre.zip)
+  - [Sketch code for project](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/FinalProjectSketch)
