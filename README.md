@@ -11,31 +11,31 @@ _All files were done using P5.js or by using libraries offered on their website 
 ## Labs
 
 Lab 1: [This file has a House](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab01_myhre.zip)
-  -[Sketch code for lab 1]
+  - [Sketch code for lab 1]
 
 Lab 2: [This file has a planet with stars](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab02_myhre.zip)
-  -[Sketch code for lab 2]
+  - [Sketch code for lab 2]
 
 Lab 3: [This file has bubbles that move with the cursor and bubbles that move passively on the screen](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab03_myhre.zip)
-  -[Sketch code for lab 3]
+  - [Sketch code for lab 3]
 
 Lab 4: [This file has pizza that changes toppings when you click on it](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab04_myhre%20(2).zip)
-  -[Sketch code for lab 3]
+  - [Sketch code for lab 4]
 
 Lab 5: [This file has a television screen with a ball bouncing around in it](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab05_myhre.zip)
-  -[Sketch code for lab 3]
+  - [Sketch code for lab 5]
 
 Lab 6: [This file has a pac that moves back and forth on the screen with some pips](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab06_myhre.zip)
-  -[Sketch code for lab 3]
+  - [Sketch code for lab 6]
 
 Lab 7: [This file has leaves that fall across the screen](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab07_myhre.zip)
-  -[Sketch code for lab 3]
+  - [Sketch code for lab 7]
 
 Lab 8: [This file shows text and images boucing from side to side](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab08_myhre.zip)
-  -[Sketch code for lab 3]
+  - [Sketch code for lab 8]
 
 Lab 10: [This file shows a rotating map with zoom in zoom out features](https://github.com/JMMyhre/MAGD-150-Assignments/blob/gh-pages/f21magd150lab10_myhre.zip)
-  -[Sketch code for lab 3]
+  - [Sketch code for lab 10]
 
 ## Final Project
 
