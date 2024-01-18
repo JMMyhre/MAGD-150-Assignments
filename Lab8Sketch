@@ -1,1 +1,80 @@
+var font1;
+var font2;
+var speed1 = 1;
+var speed2 = 1;
+var x1 = 200;
+var x2 = 200;
+var list = [];
+var pdf;
+var danny;
+var danny2;
+var danny3;
 
+
+function setup() {
+  ///this section identifies the size of the canvas as well as the 
+  ///images and text that will appear in the poster
+  createCanvas(400,800);
+  pdf = createPDF();
+  pdf.beginRecord();
+  font1 = loadFont("WickedMouse-aGoK.TTF",128);
+  font2 = loadFont("Wonderbar20-X3EgZ.TTF",128);
+  list = loadStrings("words.txt");
+  danny = loadImage("R.png");
+  danny2 = loadImage("R.jfif");
+  danny3 = loadImage("R.jfif");
+}
+
+function draw() {
+  //the if statements animates the text to move back and forth
+  if (x1 == 292){
+    speed1 = -1
+  }
+  if (x1 == 102){
+    speed1 = 1
+  }
+
+  x1=x1+speed1
+  if (x2 == 292){
+    speed2 = -1
+  }
+  if (x2 == 102){
+    speed2 = 1
+  }
+
+  x2=x2+speed2
+
+  background(160,196,249)
+  textFont(font1,48);
+  textAlign(CENTER);
+  text("Danny",x1,200);
+  textFont(font2,48);
+  text("Devito",x2,600);
+  textFont(font2,24);
+  text(list[0],x2,650);
+  text(list[1],x2,700);
+  textFont(font1,36);
+  text(list[2],x2,750);
+  imageMode(CENTER);
+  tint(160,196,249);
+  image(danny,200,400);
+  danny2and3image();
+
+}
+function danny2and3image(){
+  //this sets the grey scale property for the two smaller danny devito images
+  imageMode(CENTER);
+  image(danny2,100,400);
+  danny2.filter(GRAY);
+  imageMode(CENTER);
+  image(danny3,300,400);
+  danny3.filter(GRAY);
+}
+
+
+function mousePressed(){
+  //this shows that if the mouse is pressed it will pop up 
+  //and ask you if you want to save it as a pdf
+pdf.save();
+
+}
