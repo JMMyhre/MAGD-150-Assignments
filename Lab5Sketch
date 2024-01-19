@@ -1,1 +1,118 @@
+var rectx, recty;
+var circlex, circley;
+var rectxsize = 75;
+var rectysize = 25;
+var circlesize = 50;
+var rectcolor, circlecolor;
+var recthighlight, circlehighlight;
+var rectOver = false;
+var circleOver = false;
+let xcirclemove = false;
+let ycirclemove = false;
+let xmove = 50;
+let speed = 2;
 
+function setup() {
+  createCanvas(400, 400);
+  rectcolor = color(23,189,255);
+  recthighlight = color(175,220,253);
+  circlecolor = color(246,39,37);
+  circlehighlight = color(235,95,91);
+  circlex = 325;
+  circley = 305;
+  rectx = 287;
+  recty = 354;
+  
+  ellipseMode(CENTER);
+}
+
+function draw() {
+
+  update(mouseX,mouseY);
+  background(220);
+  rectMode(CORNER);
+  noStroke();
+  fill(115,68,17);
+  rect(50,50,300,300);
+  rect(60,300,50,100)
+  rect(270,300,50,100)
+  fill(13,13,31);
+  rect(60,60,280,280,20);
+  fill(215,240,254);
+  rect(75,75,250,250,20);
+  fill(81);
+  rect(275,250,100,200)
+  if (rectOver){
+    fill(recthighlight);
+  } else{
+    fill(rectcolor);
+  }
+  noStroke();
+  rect(rectx,recty,rectxsize,rectysize);
+  
+  if (circleOver) {
+    fill(circlehighlight);
+  } else {
+    fill(circlecolor);
+  }
+  ellipse(circlex,circley,circlesize,circlesize);
+  xmove = xmove + speed;
+  if (xmove > 300){
+    speed = -2;
+  } else if (xmove == 100){
+    speed = 2;
+  }
+  if (xcirclemove == true){
+    fill(0);
+    ellipse(xmove,200,50,50)
+  }
+  fill(255)
+  text('Start',313,310);
+  fill(255)
+  text('Stop',313,370);
+}
+
+function update(x,y){
+  if(overcircle(circlex,circley,circlesize)) {
+    circleOver = true;
+    rectOver = false;
+  } else if (overrect(rectx,recty,rectxsize,rectysize)){
+    rectOver = true;
+    circleOver = false;
+  } else {
+    circleOver = rectOver = false;
+  }
+}
+
+
+function overrect( x, y, width, height){
+  if(mouseX >= x && mouseX <= x+width && 
+     mouseY >= y && mouseY <= y + height) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function overcircle( x, y, diameter){
+  var disX = x - mouseX;
+  var disY = y - mouseY;
+  if (sqrt(sq(disX) + sq(disY)) < diameter/2) {
+    return true;
+  } else{
+    return false;
+  }
+}
+
+function mousePressed(){
+  if (mouseIsPressed && circleOver == true){
+    xcirclemove = true;
+    ycirclemove = false;
+  } else if (mouseIsPressed && rectOver == true){
+    xcirclemove = false;
+    ycirclemove = true;
+  } else {
+    xcirclemove = false;
+    ycirclemove = false;
+  }
+} 
