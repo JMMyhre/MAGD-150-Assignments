@@ -1,1 +1,69 @@
+let bubble = 0;
+let x = 0;
+let x2 = 25.5;
+let speed = 1;
+let speed2 = 0.25;
+function setup() {
+  createCanvas(400, 400);
+}
 
+function draw() {
+  background(220);
+  noLoop();
+  if (bubble == 5)
+    print("*bubble*");
+  
+  if (bubble == 10)
+    print("*bobble*");
+  
+  if (bubble == 15)
+    print("*bubble*");
+  loop();
+  bubble++;
+  if (x > width){
+    speed = -1;
+  }
+  if (x < 1){
+    speed = 1;
+  }
+  x = x + speed;
+  if (x2 > width){
+    speed2 = -0.25;
+  }
+  if (x2 < 0.01){
+    speed2 = 0.25;
+  }
+  fill(51,222,219,75);
+  noStroke();
+  ellipse(x,50,25,25);
+  ellipse(x,100,25,25);
+  ellipse(x,150,25,25);
+  ellipse(x,200,25,25);
+  ellipse(x,250,25,25);
+  ellipse(x,300,25,25);
+  ellipse(x,350,25,25);
+  x2 = x2 + speed2;
+  fill(68,201,245,75);
+  noStroke();
+  ellipse(x2,75,25,25);
+  ellipse(x2,125,25,25);
+  ellipse(x2,175,25,25);
+  ellipse(x2,225,25,25);
+  ellipse(x2,275,25,25);
+  ellipse(x2,325,25,25);
+  ellipse(x2,375,25,25);
+  frameRate(10);
+  let mousexx  = mouseX-100;
+  let mouseyy = mouseY-100;
+  ellipse(mousexx,mouseyy,50,50);
+  ellipse(mouseX,mouseY,pmouseX,pmouseY);
+  let x3 = map(mouseX, 0, width, 0, 100, true);
+  ellipse(x3, 200, 50, 50);
+  ellipse(dist(mouseX,mouseY,100,300),mouseY,50,50);
+  let wall1 = 100;
+  let wall2 = 300;
+  let con = constrain(mouseX,wall1,wall2);
+  ellipse(con,mouseY,50,50);
+  
+  
+}
