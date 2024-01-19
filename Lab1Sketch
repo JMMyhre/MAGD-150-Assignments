@@ -1,1 +1,54 @@
+function setup() {
+  createCanvas(400,400);
+  background(200)
+}
 
+function draw() {
+  rectMode(CORNER);
+  stroke(1);
+  fill(1);
+  rect(100,200,200,200);
+
+  stroke(1);
+  fill(1);
+  strokeWeight(10);
+  strokeJoin(BEVEL);
+  beginShape();
+  vertex(50,200);
+  vertex(200,100);
+  vertex(350,200);
+  endShape();
+
+  stroke(100);
+  strokeWeight(50);
+  point(75,375);
+  point(325,375);
+  point(363,375);
+  point(37,375);
+  point(56,348);
+  point(344,348);
+
+  rectMode(CENTER);
+  noStroke();
+  fill(255);
+  rect(200,350,50,100);
+  stroke(255);
+  fill(255);
+
+  ellipseMode(RADIUS);
+  ellipse(138,250,3,3);
+  ellipse(263,250,3,3);
+  stroke(1);
+  fill(1);
+
+  strokeWeight(10);
+  line(138,300,138,150);
+  line(263,300,263,150);
+  line(100,250,200,250);
+  line(300,250,200,250);
+  
+  rectMode(CENTER);
+  noStroke();
+  fill(1);
+  rect(200,325,30,20);
+}
