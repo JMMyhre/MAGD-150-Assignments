@@ -1,1 +1,64 @@
 
+
+let leafs = [];
+
+function setup() {
+  createCanvas(1000, 1000);
+  for(let i = 0; i < 1000; i++){ //this establishes how many different leafs that I want in the sketch.
+    leafs.push(new leaf());
+  }
+}
+
+function draw() {
+  background(220);
+  for(let i = 0; i < leafs.length; i++){
+    leafs[i].move();
+    leafs[i].draw();
+  }
+}
+
+
+
+
+
+
+class leaf{ // this establishes what a leaf is as well as determining the position on the screen and the different speeds at which they all fall.
+  constructor(){
+    var xpos, speed, ymove, fillcolor
+    
+    this.xpos = random(0,width);
+    this.speed = random(0.1,2);
+    this.ypos = random(-200,-20);
+    this.fillcolor = color(random(168,191),random(42,128),random(22,29));// this establishes the range of colors that I want the sketch to generate the leafs at
+  }
+  move(){
+    this.ypos = this.ypos + this.speed;
+  }
+  draw(){
+    noStroke();
+    rectMode(CENTER);
+    fill(this.fillcolor);
+    beginShape(); // this generates the shape of the leaf
+    vertex(this.xpos,this.ypos - 69)
+    vertex(this.xpos + 17,this.ypos - 37)
+    vertex(this.xpos + 50,this.ypos - 45)
+    vertex(this.xpos +40,this.ypos - 11.5)
+    vertex(this.xpos +25,this.ypos - 5)
+    vertex(this.xpos + 35,this.ypos + 4)
+    vertex(this.xpos + 22,this.ypos + 13)
+    vertex(this.xpos + 3,this.ypos + 5)
+    vertex(this.xpos + 8,this.ypos + 18)
+    vertex(this.xpos,this.ypos + 34)
+    vertex(this.xpos - 8,this.ypos + 18)
+    vertex(this.xpos - 3,this.ypos + 5)
+    vertex(this.xpos - 22,this.ypos + 13)
+    vertex(this.xpos - 35,this.ypos + 4)
+    vertex(this.xpos - 25,this.ypos - 5)
+    vertex(this.xpos - 40,this.ypos - 11.5)
+    vertex(this.xpos - 50,this.ypos - 45)
+    vertex(this.xpos - 17,this.ypos - 37)
+    vertex(this.xpos,this.ypos - 69)
+    endShape();
+  }
+}
+
